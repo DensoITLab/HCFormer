@@ -2,6 +2,7 @@
 Official Implementation of HCFormer in PyTorch.  
 arXiv: https://arxiv.org/abs/2205.09949
 
+![](https://github.com/DensoITLab/HCFormer/blob/images/overview.png)
 
 ## Installation
 ### Requirements
@@ -18,6 +19,12 @@ arXiv: https://arxiv.org/abs/2205.09949
 See [Preparing Datasets for HCFormer](datasets/README.md).
 
 See [Getting Started with HCFormer](GETTING_STARTED.md).
+
+## Example results
+- COCO (top row: clustering results with random colors and predicted masks, bottom row: cluster boundaries and gt masks)
+![](https://github.com/DensoITLab/HCFormer/blob/images/coco-res.png)
+- ADE20K (red regions indicate undersegmentation errors)
+![](https://github.com/DensoITLab/HCFormer/blob/images/ade-res.png)
 
 ## License
 A large part of this project relises on [the Mask2Former repository](https://github.com/facebookresearch/Mask2Former).  
