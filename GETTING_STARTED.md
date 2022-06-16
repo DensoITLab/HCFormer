@@ -9,7 +9,7 @@ Please see [Getting Started with Detectron2](https://github.com/facebookresearch
 We provide `demo.py` that is able to demo builtin configs. Run it with:
 ```
 cd demo/
-python demo.py --config-file ../configs/coco/panoptic-segmentation/hcformer_R50_bs16_50ep.yaml \
+python demo.py --config-file ../configs/coco/panoptic-segmentation/swin/hcformer+_swin_large_IN21k_384_bs16_200ep.yaml \
   --input input1.jpg input2.jpg \
   [--other-options]
   --opts MODEL.WEIGHTS /path/to/checkpoint_file
@@ -24,10 +24,8 @@ to understand its behavior. Some common arguments are:
 * To run __on cpu__, add `MODEL.DEVICE cpu` after `--opts`.
 * To save outputs to a directory (for images) or a file (for webcam or video), use `--output`.
 
-The pre-trained model, HCFormer+ with SwinL backbone trained on COCO panoptic segmentation, can be downloaded as follows:
-```
-wget https://d-itlab.s3.ap-northeast-1.amazonaws.com/hcformer/HCFormer%2B-SwinL-COCO-200epoch.pth
-```
+The pre-trained model (HCFormer+ with SwinL backbone trained on COCO panoptic segmentation) can be downloaded from [here](https://d-itlab.s3.ap-northeast-1.amazonaws.com/hcformer/HCFormer%2B-SwinL-COCO-200epoch.pth).
+
 
 ### Training & Evaluation in Command Line
 
